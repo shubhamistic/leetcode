@@ -11,7 +11,7 @@
  */
 class Solution {
 public:
-    // helper-functiom
+    // helper-function
     void inorder(TreeNode* t, vector<int>& arr){
         if(t){
             inorder(t->left, arr);
