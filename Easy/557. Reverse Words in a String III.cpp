@@ -7,7 +7,6 @@ public:
                 if(i == s.size()-1){
                     i++;
                 }
-                cout << lastSpace << " " << (i+lastSpace)/2 << endl;
                 int decr = 0;
                 for(int j=lastSpace ; j < (i +lastSpace)/2 ; j++){
                     char temp = s[j];
