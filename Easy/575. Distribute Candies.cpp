@@ -9,7 +9,7 @@ public:
                 count++;
             }
         }
-        
+
         if(candyType.size()/2 <= count){
             return candyType.size()/2;
         }
