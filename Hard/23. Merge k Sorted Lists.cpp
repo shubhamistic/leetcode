@@ -18,7 +18,7 @@ public:
         // we have to return this 'head' variable.
         ListNode* head = lists[0];
         for(int i=1 ; i < lists.size() ; i++){
-            ListNode* a = lists[i-1];
+            ListNode* a = head;
             ListNode* b = lists[i];
             ListNode* c = new ListNode();
             ListNode* d = c;
@@ -39,8 +39,7 @@ public:
             else if(b){
                 c->next = b;
             }
-            lists[i] = d->next;
-            head = lists[i];
+            head = d->next;
             delete d;
         }
         return head;
